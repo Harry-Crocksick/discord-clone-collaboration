@@ -8,4 +8,58 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin-inline: auto;
+}
+
+ul {
+    display: flex;
+    column-gap: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+ul li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.home-page {
+    width: 100%;
+    min-height: 75vh;
+    padding: 10px;
+    background-color: #404EED;
+    background-image: url(../assets/background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-page>nav>.logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+button {
+    appearance: none;
+    padding: 8px 15px;
+    font-size: 1.1rem;
+    border-radius: 100vw;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #f5f5f5;
 }
