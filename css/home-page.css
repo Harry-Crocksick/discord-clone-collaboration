@@ -1,0 +1,98 @@
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    padding: 10px;
+    background-color: #404EED;
+    background-image: url(../assets/background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-page>nav>.logo {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+
+button {
+    appearance: none;
+    padding: 8px 15px;
+    font-size: var(--button-font-size);
+    border-radius: 100vw;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn>button:active {
+    background-color: #f5f5f5;
+}
+
+
+.home-page__content {
+    width: 850px;
+    text-align: center;
+}
+
+.btn-group {
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page__content>h1 {
+    font-size: var(--heading-font-size);
+    color: #fff;
+    font-weight: bolder;
+}
+
+.home-page__content>p {
+    font-weight: 400;
+    font-size: var(--context-font-size);
+    color: #fff;
+    line-height: 1.65;
+}
+
+.download-svg {
+    font-size: var(--button-font-size);
+}
+
+.home-page__content button {
+    padding: 16px 32px;
+    font-size: var(--button-font-size);
+    display: inline-flex;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+.home-page__content button.black {
+    background-color: #222;
+    color: #fff;
+}
+
+.left-hero {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: block;
+    margin-left: -1024px;
+}
+
+.right-hero {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    margin-left: 370px;
+}
+
+.second-section {
+    min-height: 100vh;
+}
