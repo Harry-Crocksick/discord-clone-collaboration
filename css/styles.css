@@ -1,6 +1,5 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-  /* font-family: 'Caprasimo', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* font-family: 'Caprasimo', cursive;
   font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Condensed', sans-serif; */
 * {
@@ -13,20 +12,24 @@
 
 /* header section style starts */
 header {
-  background-color: #0079FF;
-  padding: 1rem 4.6rem;
+  background-color: #0079ff;
+  padding: 1rem 4rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  transition: .2s;
+  transition: 0.2s;
 }
-header .logo  {
+header .logo {
   font-size: 1.3rem;
   color: #fff;
-  font-family: 'Caprasimo', cursive;
+  font-family: "Caprasimo", cursive;
 }
-header .logo i{
+header .logo i {
   padding: 0 0.5rem;
+}
+header .nav-bar {
+  transition: 0.2s;
 }
 header ul {
   display: flex;
@@ -34,28 +37,74 @@ header ul {
   align-items: center;
   gap: 2rem;
 }
-header ul li{
+header ul li {
   list-style: none;
- 
 }
 header ul li a {
   color: #fff;
   font-size: 1rem;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
-header ul li a:hover{
+header ul li a:hover {
   text-decoration: underline;
 }
 header .loginBtn {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 4.5rem;
   height: 2.5rem;
   border-radius: 2rem;
   background-color: #fff;
   border: none;
 }
-header .loginBtn:hover{
- color:#0079FF ;
- box-shadow: 0 .3rem 1rem rgba(0,0,0,.3);
+header .loginBtn:hover {
+  color: #0079ff;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}
+header .fa-bars {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  transition: 0.2s linear;
+}
+header .fa-times {
+  transform: rotate(180deg);
+}
+header .nav-toggle {
+  top: 5.5rem;
+  opacity: 1;
+}
+/* header style ends */
+
+/* media ueries */
+@media (max-width: 998px) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+  header .rightBtn{
+    display: flex; 
+    align-items: center;
+  }
+  header .fa-bars {
+    display: block;
+    margin-left: 1rem;
+    
+  }
+  header .nav-bar {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    width: 35%;
+    height: 100vh;
+    z-index: 1000;
+  }
+  header .nav-bar ul {
+    flex-direction: column;
+  }
+  header .nav-bar ul li a {
+    color: black;
+  }
 }
