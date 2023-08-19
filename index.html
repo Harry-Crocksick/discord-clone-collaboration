@@ -22,11 +22,12 @@
     <meta property="twitter:image" content="./assets/thumbnail.png" />
     <link rel="icon" type="favicon/ico" href="./assets/icon.ico">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="./js/script.js" defer></script>
 </head>
 
 <body>
-    <div class="home-page perfect-center">
+    <section class="home-page perfect-center">
         <nav class="primary-navbar">
             <div class="logo perfect-center">
                 <svg width="124" height="34" viewBox="0 0 124 34">
@@ -107,8 +108,69 @@
             </div>
         </div>
         <img src="./assets/right-hero.svg" alt="hero" class="right-hero">
-    </div>
-    <div class="second-section"></div>
+    </section>
+    <section>
+        <div class="info-container" data-aos="fade-up">
+            <div class="info">
+                <img src="./assets/first.svg" alt="Hero Image" class="info-hero-img responsive-img">
+                <div class="info-context">
+                    <h2>Create an invite-only place where you belong</h2>
+                    <p>
+                        Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="diff-color">
+        <div class="info-container" data-aos="fade-up">
+            <div class="info reverse">
+                <div class="info-context">
+                    <h2>Where hanging out is easy</h2>
+                    <p>
+                        Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.
+                    </p>
+                </div>
+                <img src="./assets/second.svg" alt="Hero Image" class="info-hero-img responsive-img">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="info-container" data-aos="fade-up">
+            <div class="info">
+                <img src="./assets/third.svg" alt="Hero Image" class="info-hero-img responsive-img">
+                <div class="info-context">
+                    <h2>From few to a fandom</h2>
+                    <p>
+                        Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="diff-color">
+        <div class="info-container" data-aos="fade-up">
+            <div class="info">
+                <div class="last-info-context">
+                    <h2>Reliable tech for staying close</h2>
+                    <p>
+                        Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.
+                    </p>
+                </div>
+                <img src="./assets/fourth.svg" alt="Hero Image" class="last-hero-img responsive-img">
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        offset: 20,
+        duration: 750,
+        easing: "ease-in-out",
+        once: true,
+    });
+
+    </script>
 </body>
 
 </html>

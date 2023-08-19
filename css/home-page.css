@@ -73,7 +73,7 @@ button {
 }
 
 .home-page__content button.black {
-    background-color: #222;
+    background-color: var(--dark-color);
     color: #fff;
 }
 

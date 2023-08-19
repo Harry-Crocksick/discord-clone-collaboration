@@ -1,5 +1,6 @@
 @import "./navbar.css";
 @import "./home-page.css";
+@import "./info-section.css";
 
 *,
 *::before,
@@ -8,9 +9,12 @@
 }
 
 :root {
-    --heading-font-size: 3rem;
+    --heading-font-size: 40px;
+    --small-heading-font-size: 24px;
     --button-font-size: 20px;
     --context-font-size: clamp(16px, 2vw, 22px);
+    --brand-color: #7983F5;
+    --dark-color: #222;
 }
 
 body {
@@ -25,4 +29,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.responsive-img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
