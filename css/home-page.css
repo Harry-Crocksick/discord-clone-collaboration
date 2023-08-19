@@ -1,7 +1,4 @@
 .home-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     width: 100%;
     min-height: 70vh;
@@ -20,6 +17,7 @@
 }
 
 button {
+    display: block;
     appearance: none;
     padding: 8px 15px;
     font-size: var(--button-font-size);
@@ -29,7 +27,13 @@ button {
     cursor: pointer;
 }
 
-.btn>button:active {
+.btn {
+    display: flex;
+    column-gap: 0.375rem;
+    align-items: center;
+}
+
+.btn>button:active:not(button.hamburger-btn) {
     background-color: #f5f5f5;
 }
 
@@ -40,10 +44,7 @@ button {
 }
 
 .btn-group {
-    display: flex;
     column-gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
 }
 
 .home-page__content>h1 {

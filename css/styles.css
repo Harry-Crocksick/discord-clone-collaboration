@@ -17,5 +17,12 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
     font-family: sans-serif;
+}
+
+.perfect-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
