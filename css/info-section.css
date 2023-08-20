@@ -85,18 +85,6 @@ p {
     font-size: var(--small-heading-font-size);
 }
 
-.start-journey button {
-    display: inline-flex;
-    align-items: center;
-    column-gap: 0.5rem;
-    padding: 16px 32px;
-    width: max-content;
-    margin-inline: auto;
-    color: #fff;
-    background-color: var(--brand-color);
-    transition: background-color 0.2s ease-in-out;
-}
-
 .start-journey button:hover {
     background-color: #7983F5;
 }

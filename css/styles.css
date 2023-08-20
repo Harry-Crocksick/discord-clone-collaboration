@@ -1,4 +1,5 @@
 @import "./navbar.css";
+@import "./responsive-navbar.css";
 @import "./home-page.css";
 @import "./info-section.css";
 
@@ -38,4 +39,16 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.common-button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 12px 32px;
+    width: max-content;
+    margin-inline: auto;
+    color: #fff;
+    background-color: var(--brand-color);
+    transition: background-color 0.2s ease-in-out;
 }
