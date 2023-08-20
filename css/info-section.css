@@ -9,23 +9,25 @@
 
 .info {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(var(--num-grid-columns), 1fr);
     place-content: center;
 }
 
 .info>.info-hero-img {
-    grid-column: span 7;
+    grid-column: 1/span 7;
 }
 
 .info>.info-context {
     display: flex;
     flex-direction: column;
-    grid-column: span 4;
+    grid-column: 9/span 4;
+    line-height: 32.5px;
 }
 
 h2 {
     font-size: var(--heading-font-size);
     color: var(--dark-color);
+    line-height: 57.6px;
 }
 
 p {
@@ -39,12 +41,12 @@ p {
 
 .info.reverse>.info-hero-img {
     order: 2;
-    grid-column: 7/span 6;
+    grid-column: 6/span 7;
 }
 
 .info.reverse>.info-context {
     order: 1;
-    grid-column: 2/span 4;
+    grid-column: 1/span 4;
 }
 
 .last-info-context {
@@ -56,6 +58,47 @@ p {
 
 .last-hero-img {
     grid-column: 1/-1;
+}
+
+.start-journey {
+    max-width: 1260px;
+    width: 100%;
+    margin-inline: auto;
+    padding-bottom: 85px;
+}
+
+.inner-start-journey {
+    width: 480px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-start-journey>.stars {
+    position: absolute;
+    top: 0;
+}
+
+.inner-start-journey>h2 {
+    margin-top: 2rem;
+    font-size: var(--small-heading-font-size);
+}
+
+.start-journey button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    padding: 16px 32px;
+    width: max-content;
+    margin-inline: auto;
+    color: #fff;
+    background-color: var(--brand-color);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.start-journey button:hover {
+    background-color: #7983F5;
 }
 
 @media only screen and (max-width: 768px) {

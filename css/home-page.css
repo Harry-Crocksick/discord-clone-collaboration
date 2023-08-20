@@ -17,7 +17,8 @@
 }
 
 button {
-    display: block;
+    display: inline-block;
+    align-items: center;
     appearance: none;
     padding: 8px 15px;
     font-size: var(--button-font-size);
@@ -36,7 +37,6 @@ button {
 .btn>button:active:not(button.hamburger-btn) {
     background-color: #f5f5f5;
 }
-
 
 .home-page__content {
     width: 850px;
@@ -96,4 +96,26 @@ button {
 
 .second-section {
     min-height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-page__content {
+        text-align: left;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .left-hero {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .btn-group {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
 }

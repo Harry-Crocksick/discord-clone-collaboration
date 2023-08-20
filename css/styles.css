@@ -9,11 +9,12 @@
 }
 
 :root {
+    --num-grid-columns: 12;
     --heading-font-size: 40px;
     --small-heading-font-size: 24px;
     --button-font-size: 20px;
-    --context-font-size: clamp(16px, 2vw, 22px);
-    --brand-color: #7983F5;
+    --context-font-size: clamp(16px, 2vw, 20px);
+    --brand-color: #404EED;
     --dark-color: #222;
 }
 
