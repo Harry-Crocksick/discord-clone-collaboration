@@ -71,8 +71,9 @@ footer .upper .icons>a {
 }
 
 @media only screen and (max-width: 1024px) {
+
     footer>.upper {
-        grid-template-columns: repeat(8, 1fr);
+        --num-grid-columns: 8;
     }
 
     footer>.upper .resources {
@@ -85,8 +86,9 @@ footer .upper .icons>a {
 }
 
 @media only screen and (max-width: 768px) {
+
     footer>.upper {
-        grid-template-columns: repeat(4, 1fr);
+        --num-grid-columns: 4;
     }
 
     footer>.upper .social {
