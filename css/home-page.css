@@ -1,7 +1,7 @@
 .home-page {
     position: relative;
     width: 100%;
-    min-height: 70vh;
+    height: 700px;
     padding: 10px;
     background-color: #404EED;
     background-image: url(../assets/background.svg);

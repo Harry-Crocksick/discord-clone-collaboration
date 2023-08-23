@@ -1,0 +1,102 @@
+.footer-section {
+    width: 100%;
+    background-color: #23272A;
+}
+
+footer {
+    max-width: 1260px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 85px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+footer>.upper {
+    display: grid;
+    grid-template-columns: repeat(var(--num-grid-columns), 1fr);
+}
+
+footer>.lower {
+    border-top: 1.5px solid var(--brand-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+}
+
+footer .signup-btn {
+    background-color: var(--brand-color);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 100vw;
+}
+
+footer .upper .social {
+    grid-column: 1/span 4;
+}
+
+footer .upper .social select {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+footer .upper h4 {
+    color: var(--brand-color);
+}
+
+footer .upper a {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+footer .upper a:hover {
+    text-decoration: underline;
+}
+
+footer .upper .icons {
+    margin-top: 2rem;
+    display: flex;
+}
+
+footer .upper .icons>a {
+    display: inline-block;
+    width: max-content;
+    margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    footer>.upper {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    footer>.upper .resources {
+        grid-column: 5/span 2;
+    }
+
+    footer>.upper .policies {
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer>.upper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer>.upper .social {
+        grid-column: span 4;
+    }
+
+    footer>.upper .product,
+    footer>.upper .company,
+    footer>.upper .resources,
+    footer>.upper .policies {
+        grid-column: span 2;
+    }
+}
