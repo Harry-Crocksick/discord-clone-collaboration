@@ -108,7 +108,8 @@ button {
         justify-content: flex-start;
     }
 
-    .left-hero {
+    .left-hero,
+    .right-hero {
         display: none;
     }
 }

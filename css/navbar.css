@@ -6,16 +6,14 @@ nav.primary-navbar {
     padding: 20px 30px;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 9999;
     background-color: rgba(0, 0, 0, 0.1);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     border-radius: 100vw;
+    z-index: 9999;
 }
 
 ul {
@@ -57,7 +55,7 @@ a.login-btn {
         padding: 8px 14px;
     }
 
-    .links {
+    nav.primary-navbar>.links {
         display: none;
     }
 
